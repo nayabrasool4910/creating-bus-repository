@@ -15,9 +15,6 @@ window=Tk()
 window.title("KNR TRAVELS")
 window.configure(background="sky blue")
 
-list1=Listbox(window,height=10,width=100)
-list1.grid(row=0,column=8,rowspan=10,columnspan=3)
-
 l1=Label(window,text="SOURCE:",fg="red")
 l1.grid(row=0,column=0)
 
@@ -40,5 +37,9 @@ b1.grid(row=1,column=4)
 
 b2=Button(window,text="  view",fg="red",command=view_text)
 b2.grid(row=1,column=5)
+
+list1=Listbox(window,height=10,width=100)
+list1.grid(row=0,column=8,rowspan=10,columnspan=3)
+
 
 window.mainloop()
