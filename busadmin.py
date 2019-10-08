@@ -2,10 +2,10 @@ from tkinter import *
 import backadmin
 
 def insert_text():
-    backadmin.insert(serviceno_text.get(),busname_text.get(),source_text.get(),destination_text.get(),depo_text.get(),frequency_text.get(),passallowed_text.get())
+    backadmin.insert(serviceno_integer.get(),busname_text.get(),source_text.get(),destination_text.get(),depo_text.get(),frequency_text.get(),passallowed_text.get())
 
 def update_text():
-    backadmin.update(serviceno_text.get(),busname_text.get(),source_text.get(),destination_text.get(),depo_text.get(),frequency_text.get(),passallowed_text.get())
+    backadmin.update(serviceno_integer.get(),busname_text.get(),source_text.get(),destination_text.get(),depo_text.get(),frequency_text.get(),passallowed_text.get())
 
 def search_text():
     list1.delete(0,END)
